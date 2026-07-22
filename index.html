@@ -12,18 +12,16 @@
             width: 100%;
             height: 100%;
             background-color: #f4f4f9;
-            /* overflow: hidden dihapus agar tidak memblokir scroll bawaan */
         }
 
-        /* Wrapper baru untuk menangani masalah scroll di mobile (terutama iOS Safari) */
         .iframe-wrapper {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh; /* Fallback untuk browser lama */
-            height: 100dvh; /* Dynamic viewport - menyesuaikan jika ada URL bar di HP */
-            -webkit-overflow-scrolling: touch; /* Mengaktifkan smooth scrolling di iOS */
+            height: 100vh;
+            height: 100dvh;
+            -webkit-overflow-scrolling: touch;
             overflow-y: auto;
         }
 
