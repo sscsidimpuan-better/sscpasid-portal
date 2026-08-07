@@ -6,12 +6,14 @@
     <title>Portal SSC Padangsidimpuan</title> 
     
     <style>
+        /* Kunci body dan html agar tidak bisa di-scroll sama sekali */
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
             background-color: #f4f4f9;
+            overflow: hidden; /* Mencegah scroll di level parent */
         }
 
         .iframe-wrapper {
@@ -19,10 +21,8 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
-            height: 100dvh;
-            -webkit-overflow-scrolling: touch;
-            overflow-y: auto;
+            height: 100%; /* Gunakan 100% alih-alih vh untuk menghindari lompatan address bar */
+            /* Hapus overflow-y dan webkit-overflow-scrolling */
         }
 
         .iframe-container {
@@ -37,7 +37,7 @@
     <div class="iframe-wrapper">
         <iframe 
             class="iframe-container" 
-            src="https://script.google.com/macros/s/AKfycbz28fu0740x8T2ol9oshg5IgpOpm6jyeV9ZrpfMMp-q2ts4GyQxqMUE9My1Jkre72RjpQ/exec" 
+            src="https://script.google.com/macros/s/AKfycbwAG7U06sQqbEXHQLe6nS0oRLHNVNvsqfxiA1TvMl6wje3hVy3NzVWsyD5532kAFLqDTg/exec" 
             allowfullscreen>
         </iframe>
     </div>
